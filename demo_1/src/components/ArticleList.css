@@ -1,0 +1,78 @@
+.article-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.news-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 700px; /* Increased width to accommodate lengthy URLs */
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+  display: block; /* Make each URL its own line */
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.show-more {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-more:hover {
+  background-color: #0056b3;
+}
+
+
+
+.article-list h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-right:30%
+}
+.button-style {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* To remove underline from link */
+  display: inline-block; /* To allow padding and height adjustments */
+}
+
+.button-style:hover {
+  background-color: #0056b3;
+}

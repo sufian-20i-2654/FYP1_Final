@@ -1,0 +1,94 @@
+.login-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #0c0b0b;
+    overflow: hidden;
+}
+.login-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h2 {
+    color: #0c0b0b;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 20px 0; /* Adjust as needed */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 600px; /* Existing width */
+    align-items: center;
+    background-color: rgb(248, 245, 245); /* Semi-transparent background for visibility */
+    border: 2px solid #050505; /* Border to highlight the container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the form elements */
+    margin: 0 auto; /* Centering the form */
+}
+
+.input-group {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width of the form */
+    margin-bottom: 15px;
+}
+
+label {
+    color: #050505;
+    margin-right: 10px; /* Space between label and icon */
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0; /* Prevent the label from shrinking */
+}
+
+.username-icon, .password-icon {
+    height: 30px; /* Adjust the size as needed */
+    width: 30px; /* Adjust the size as needed */
+    margin-right: 10px; /* Space between the icon and the input field */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #030303;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 150px); /* Adjust width considering label, icon width, and margins */
+    flex-grow: 1; /* Allow input to grow and fill available space */
+}
+
+
+
+input:focus {
+    outline: none;
+    background-color: #eee;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
